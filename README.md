@@ -54,9 +54,9 @@ Rossmann operates over 3,000 drug stores in 7 European countries. Store managers
 |----------------------|----------------|---------------|
 | Linear Regression     | 0.783714        | 0.783973      |
 | Lasso Regression      | 0.783695        | 0.783955      |
-| Decision Tree         | 0.962855        | 0.929569      |
+| Decision Tree         | 0.962855        | 0.929598      |
 | KNN                   | 0.676943        | 0.651168      |
-| Random Forest         | 0.993722        | 0.956205      |
+| Random Forest         | 0.993707        | 0.955987      |
 
 ---
 
