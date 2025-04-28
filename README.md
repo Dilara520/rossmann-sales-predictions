@@ -25,7 +25,8 @@ My work includes:
 - `Retail Sales Prediction.pdf`: Presentation summarizing visualizations and key insights from the analysis.
 - `requirements.txt`: Lists all Python packages needed.
 - `models/`: Not included for size reasons.
-- `data/`: **Not included.** Datasets are accessed programmatically via **DBRepo API** using dataset identifiers.
+- `data/`: Not included. Datasets are accessed programmatically via **DBRepo API** using dataset identifiers.
+- `sample_submission.csv`: A sample submission file. Predictions made on accessed test dataset using Random Forest Model.
 
 ---
 
