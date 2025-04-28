@@ -1,0 +1,216 @@
+{
+    "schema:name": "Regression Models for Dataset Prediction",
+    "schema:description": "This model package includes several regression models (Linear Regression, Lasso Regression, Decision Tree Regression, Tuned Decision Tree Regression, k-Nearest Neighbors Regression, and Random Forest Regression) trained on a test dataset for predicting the target variable. The model scores and performance metrics have been evaluated on a test dataset.",
+    "schema:creator": {
+      "@type": "schema:Person",
+      "schema:name": "Dilara Cakmak",
+      "schema:affiliation": "TU Wien: Vienna, Vienna, AT",
+      "schema:orcid": "https://orcid.org/0009-0006-0724-0199"
+    },
+    "schema:keywords": [
+      "Regression",
+      "Machine Learning",
+      "Random Forest",
+      "Decision Tree",
+      "Lasso Regression",
+      "Linear Regression",
+      "k-Nearest Neighbors",
+      "Prediction"
+    ],
+    "schema:license": {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Creative Commons Attribution 4.0 International License",
+      "schema:url": "http://creativecommons.org/licenses/by/4.0/"
+    },
+    "schema:identifier": "10.70124/f5t2d-xt904",
+    "schema:version": "1.0",
+    "schema:dateCreated": "2025-04-28",
+    "schema:dateModified": "2025-04-28",
+    "dcat:dataset": [
+      {
+        "@type": "dcat:Dataset",
+        "dcat:identifier": "10.82556/yb6j-jw41",
+        "schema:name": "Train",
+        "schema:description": "historical data including Sales"
+      },
+      {
+        "@type": "dcat:Dataset",
+        "dcat:identifier": "10.82556/rdy2-hv76",
+        "schema:name": "Store",
+        "schema:description": "supplemental information about the stores"
+      },
+      {
+        "@type": "dcat:Dataset",
+        "dcat:identifier": "10.82556/jerg-4b84",
+        "schema:name": "Test2",
+        "schema:description": "historical data excluding Sales"
+      }
+    ],
+    "ml:hasModelEvaluation": [
+      {
+        "@type": "ml:ModelEvaluation",
+        "schema:name": "Linear Regression",
+        "ml:trainScore": 0.7833173444218389,
+        "ml:testScore": 0.7848901707235826,
+        "ml:trainRMSE": 1148.2442123823257,
+        "ml:testRMSE": 1146.3612972758738,
+        "ml:trainMAPE": 14.118263683067669,
+        "ml:testMAPE": 14.140345281579169
+      },
+      {
+        "@type": "ml:ModelEvaluation",
+        "schema:name": "Lasso Regression",
+        "ml:trainScore": 0.7832981706142594,
+        "ml:testScore": 0.7848661303740866,
+        "ml:trainRMSE": 1148.2950141562442,
+        "ml:testRMSE": 1146.4253532894572,
+        "ml:trainMAPE": 14.122957085776719,
+        "ml:testMAPE": 14.144870402248038
+      },
+      {
+        "@type": "ml:ModelEvaluation",
+        "schema:name": "Decision Tree Regression",
+        "ml:trainScore": 1.0,
+        "ml:testScore": 0.9119208771146985,
+        "ml:trainRMSE": 0.0,
+        "ml:testRMSE": 733.5468864272187,
+        "ml:trainMAPE": 0.0,
+        "ml:testMAPE": 7.677360512198621
+      },
+      {
+        "@type": "ml:ModelEvaluation",
+        "schema:name": "Tuned Decision Tree Regression",
+        "ml:trainScore": 0.9633511430729215,
+        "ml:testScore": 0.9307149050606744,
+        "ml:trainRMSE": 472.2287315996843,
+        "ml:testRMSE": 650.5958604528221,
+        "ml:trainMAPE": 4.99600581589059,
+        "ml:testMAPE": 6.8791560796936535
+      },
+      {
+        "@type": "ml:ModelEvaluation",
+        "schema:name": "k-Nearest Neighbors Regression",
+        "ml:trainScore": 0.6763494149273611,
+        "ml:testScore": 0.6508721287114005,
+        "ml:trainRMSE": 1403.3318709589353,
+        "ml:testRMSE": 1460.4397590585686,
+        "ml:trainMAPE": 18.066526742917322,
+        "ml:testMAPE": 18.854862146029294
+      },
+      {
+        "@type": "ml:ModelEvaluation",
+        "schema:name": "Random Forest Regression",
+        "ml:trainScore": 0.9937257763222039,
+        "ml:testScore": 0.9561722815908191,
+        "ml:trainRMSE": 195.38993526482912,
+        "ml:testRMSE": 517.4469349667845,
+        "ml:trainMAPE": 2.106153561792963,
+        "ml:testMAPE": 5.630561359160196
+      }
+    ],
+    "ml:input": {
+        "@type": "ml:Input",
+        "schema:name": "Store Sales Prediction Inputs",
+        "schema:description": "Input features used to predict daily sales turnover.",
+        "schema:variableMeasured": [
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "Store",
+            "schema:description": "A unique Id for each store."
+            },
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "Customers",
+            "schema:description": "The number of customers on a given day."
+            },
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "SchoolHoliday",
+            "schema:description": "Indicates if the (Store, Date) was affected by the closure of public schools (1 = Yes, 0 = No)."
+            },
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "StoreType",
+            "schema:description": "Differentiates between 4 different store models: a, b, c, d."
+            },
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "Assortment",
+            "schema:description": "Describes the assortment level: a = basic, b = extra, c = extended."
+            },
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "CompetitionDistance",
+            "schema:description": "Distance in meters to the nearest competitor store."
+            },
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "Promo",
+            "schema:description": "Indicates whether a store was running a promotion on that day (1 = Yes, 0 = No)."
+            }
+        ]
+    },
+    "ml:output": {
+        "@type": "ml:Output",
+        "schema:name": "Sales Prediction",
+        "schema:description": "a sample submission file in the correct format",
+        "schema:identifier": "Sales",
+        "schema:unitText": "USD",
+        "schema:additionalProperty": [
+            {
+            "@type": "schema:PropertyValue",
+            "schema:name": "Id",
+            "schema:description": "an Id that represents a (Store, Date) duple within the test set"
+            }
+        ]
+    },
+    "ml:hasModelArtifact": [
+        {
+            "@type": "ml:ModelArtifact",
+            "schema:name": "Random Forest Regression Model",
+            "schema:description": "Trained Random Forest Regression model serialized as a .pkl file.",
+            "schema:encodingFormat": "application/octet-stream",
+            "schema:contentUrl": "https://test.researchdata.tuwien.ac.at/records/f5t2d-xt904/files/Random%20Forest%20Regression_model.pkl?download=1"
+        },
+        {
+            "@type": "ml:ModelArtifact",
+            "schema:name": "Linear Regression Model",
+            "schema:description": "Trained Linear Regression model serialized as a .pkl file.",
+            "schema:encodingFormat": "application/octet-stream",
+            "schema:contentUrl": "https://test.researchdata.tuwien.ac.at/records/f5t2d-xt904/files/Linear%20Regression_model.pkl?download=1"
+        },
+        {
+            "@type": "ml:ModelArtifact",
+            "schema:name": "Lasso Regression Model",
+            "schema:description": "Trained Lasso Regression model serialized as a .pkl file.",
+            "schema:encodingFormat": "application/octet-stream",
+            "schema:contentUrl": "https://test.researchdata.tuwien.ac.at/records/f5t2d-xt904/files/Lasso%20Regression_model.pkl?download=1"
+        },
+        {
+            "@type": "ml:ModelArtifact",
+            "schema:name": "Decision Tree Regression Model",
+            "schema:description": "Trained Decision Tree Regression model serialized as a .pkl file.",
+            "schema:encodingFormat": "application/octet-stream",
+            "schema:contentUrl": "https://test.researchdata.tuwien.ac.at/records/f5t2d-xt904/files/Decision%20Tree%20Regression_model.pkl?download=1"
+        },
+        {
+            "@type": "ml:ModelArtifact",
+            "schema:name": "Tuned Decision Tree Regression Model",
+            "schema:description": "Trained Tuned Decision Tree Regression model serialized as a .pkl file.",
+            "schema:encodingFormat": "application/octet-stream",
+            "schema:contentUrl": "https://test.researchdata.tuwien.ac.at/records/f5t2d-xt904/files/Tuned%20Decision%20Tree%20Regression_model.pkl?download=1"
+        },
+        {
+            "@type": "ml:ModelArtifact",
+            "schema:name": "k-Nearest Neighbors Regression Model",
+            "schema:description": "Trained k-Nearest Neighbors Regression model serialized as a .pkl file.",
+            "schema:encodingFormat": "application/octet-stream",
+            "schema:contentUrl": "https://test.researchdata.tuwien.ac.at/records/f5t2d-xt904/files/k-Nearest%20Neighbors%20Regression_model.pkl?download=1"
+        }
+    ],
+    "prov:wasAttributedTo": {
+      "@type": "schema:Person",
+      "schema:name": "Dilara Cakmak",
+      "schema:orcid": "https://orcid.org/0009-0006-0724-0199"
+    }
+  }  
