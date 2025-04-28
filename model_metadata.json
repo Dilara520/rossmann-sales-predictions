@@ -1,4 +1,5 @@
 {
+    "@context":	"https://rda-fair4ml.github.io/FAIR4ML-schema/release/0.1.0/fair4ml.jsonld",
     "schema:name": "Regression Models for Dataset Prediction",
     "schema:description": "This model package includes several regression models (Linear Regression, Lasso Regression, Decision Tree Regression, Tuned Decision Tree Regression, k-Nearest Neighbors Regression, and Random Forest Regression) trained on a test dataset for predicting the target variable. The model scores and performance metrics have been evaluated on a test dataset.",
     "schema:creator": {
