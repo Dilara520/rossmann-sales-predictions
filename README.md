@@ -52,18 +52,18 @@ Rossmann operates over 3,000 drug stores in 7 European countries. Store managers
 
 | Model                | Training Score | Testing Score |
 |----------------------|----------------|---------------|
-| Linear Regression     | 0.783714        | 0.783973      |
-| Lasso Regression      | 0.783695        | 0.783955      |
-| Decision Tree         | 0.962855        | 0.929598      |
-| KNN                   | 0.676943        | 0.651168      |
-| Random Forest         | 0.993707        | 0.955987      |
+| Linear Regression     | 0.783317        | 0.784890      |
+| Lasso Regression      | 0.783298        | 0.784866      |
+| Decision Tree         | 0.963351        | 0.930715      |
+| KNN                   | 0.676349        | 0.650872      |
+| Random Forest         | 0.993726        | 0.956172      |
 
 ---
 
 ## 4. Achievements
 
-- **MAPE**: 5.65%
-- - **RMSE**: 517
+- **MAPE**: 5.63%
+- **RMSE**: 517
 
 These results show the model is highly accurate for forecasting sales. Insights from EDA and feature importance analyses provide valuable tools for budgeting and inventory decisions.
 
