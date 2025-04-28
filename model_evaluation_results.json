@@ -1,0 +1,56 @@
+[
+    {
+        "Model": "Linear Regression",
+        "Train_Score": 0.7833173444218389,
+        "Test_Score": 0.7848901707235826,
+        "Train_RMSE": 1148.2442123823257,
+        "Test_RMSE": 1146.3612972758738,
+        "Train_MAPE": 14.118263683067669,
+        "Test_MAPE": 14.140345281579169
+    },
+    {
+        "Model": "Lasso Regression",
+        "Train_Score": 0.7832981706142594,
+        "Test_Score": 0.7848661303740866,
+        "Train_RMSE": 1148.2950141562442,
+        "Test_RMSE": 1146.4253532894572,
+        "Train_MAPE": 14.122957085776719,
+        "Test_MAPE": 14.144870402248038
+    },
+    {
+        "Model": "Decision Tree Regression",
+        "Train_Score": 1.0,
+        "Test_Score": 0.9119208771146985,
+        "Train_RMSE": 0.0,
+        "Test_RMSE": 733.5468864272187,
+        "Train_MAPE": 0.0,
+        "Test_MAPE": 7.677360512198621
+    },
+    {
+        "Model": "Tuned Decision Tree Regression",
+        "Train_Score": 0.9633511430729215,
+        "Test_Score": 0.9307149050606744,
+        "Train_RMSE": 472.2287315996843,
+        "Test_RMSE": 650.5958604528221,
+        "Train_MAPE": 4.99600581589059,
+        "Test_MAPE": 6.8791560796936535
+    },
+    {
+        "Model": "k-Nearest Neighbors Regression",
+        "Train_Score": 0.6763494149273611,
+        "Test_Score": 0.6508721287114005,
+        "Train_RMSE": 1403.3318709589353,
+        "Test_RMSE": 1460.4397590585686,
+        "Train_MAPE": 18.066526742917322,
+        "Test_MAPE": 18.854862146029294
+    },
+    {
+        "Model": "Random Forest Regression",
+        "Train_Score": 0.9937257763222039,
+        "Test_Score": 0.9561722815908191,
+        "Train_RMSE": 195.38993526482912,
+        "Test_RMSE": 517.4469349667845,
+        "Train_MAPE": 2.106153561792963,
+        "Test_MAPE": 5.630561359160196
+    }
+]
