@@ -62,8 +62,8 @@ Rossmann operates over 3,000 drug stores in 7 European countries. Store managers
 
 ## 4. Achievements
 
-- **MAPE**: 5.65%  
-- **MAE**: \$376  
+- **MAPE**: 5.65%
+- - **RMSE**: 517
 
 These results show the model is highly accurate for forecasting sales. Insights from EDA and feature importance analyses provide valuable tools for budgeting and inventory decisions.
 
